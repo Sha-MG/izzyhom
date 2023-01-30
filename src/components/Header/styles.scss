@@ -1,0 +1,14 @@
+@use 'src/styles/vars' as v ;
+
+.title{
+
+  color: v.$black;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 30px;
+  text-align: center;
+
+  &--purple{
+    color: v.$purple;
+  }
+}

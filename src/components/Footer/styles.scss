@@ -1,0 +1,12 @@
+@use 'src/styles/vars' as v ;
+
+
+footer{
+  width: 100vw;
+  background-color: v.$dark-purple;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  position: static;
+  bottom: 0;
+}

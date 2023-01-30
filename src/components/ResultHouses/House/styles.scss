@@ -1,0 +1,55 @@
+@use 'src/styles/vars' as v ;
+
+.house-container{
+  width: 50vw;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 20px v.$grey;
+  border-radius: 0 40px 0 40px;
+  transition: 0.3s;
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 30px v.$light-purple;
+  }
+
+  &--left{
+    width: 30vw;
+    height: 350px;
+    background-size: cover;
+    border-radius: 0 0 0 40px;
+  }
+
+  &--right{
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+
+    h2{
+      text-align: center;
+      font-size: 1.3rem;
+    }
+
+    &--price{
+      font-size: 1.5rem;
+      color: v.$purple;
+      font-family: v.$price-font;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &--address{
+
+      padding: 10px;
+    }
+
+    &--details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+    }
+  }
+}

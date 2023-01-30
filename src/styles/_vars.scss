@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('src/assets/fonts/Roboto-Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap');
+
+$font: 'Roboto', sans-serif; 
+$price-font: 'Josefin Sans', sans-serif;
+
+$black:#1A202C;
+$grey: mix($black, white, 10%);
+
+
+$purple:#B400F5;
+$dark-purple:#611F69;
+$light-purple: mix($purple, white, 15%);
+
+$pink: #FF2387;
+$yellow:#FFE500;
+$blue : #01FFFF;

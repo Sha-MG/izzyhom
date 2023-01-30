@@ -1,0 +1,103 @@
+@use 'src/styles/vars' as v ;
+
+.searchbar-container{
+  text-align: center;
+  margin: 10vh auto;
+  width: 60vw;
+  min-width: 650px;
+  box-shadow: 1px 1px 20px v.$grey;
+  border-radius: 5px;
+  padding: 40px;
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--input{
+
+    input{
+      margin-right: 30px;
+      background-color: v.$grey;
+      border: none;
+      padding: 10px;
+      padding-left: 30px;
+      border-left: 10px solid;
+      border-radius: 0 20px 0 20px;
+
+      
+      }
+
+      .yellowsearch{
+        border-color: v.$yellow;
+        &:hover, &:focus{
+          outline-color: v.$yellow;
+        }
+      }
+      
+      .bluesearch{
+        border-color: v.$blue;
+        &:hover, &:focus{
+          outline-color: v.$blue;
+        }
+    }
+    
+  }
+
+  &--icons{
+    position: relative;
+    left: 30px;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: v.$black;
+  }
+
+  &--range{
+
+    .range {
+      width: 150px;
+      height: 15px;
+      -webkit-appearance: none;
+      background: v.$grey;
+      outline: none;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: v.$pink;
+      cursor: pointer;
+      border: 4px solid v.$black;
+      box-shadow: -407px 0 0 400px v.$pink;
+    }
+  }
+
+  &--buttons{
+    
+    background-color: v.$purple;
+    color: white;
+    padding :15px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 4px 0 v.$dark-purple;
+    transition: 0.2s;
+
+    &:hover{
+      box-shadow: none;
+      transform: translateY(0.25em);
+    }
+  }
+}
+
+  
+  

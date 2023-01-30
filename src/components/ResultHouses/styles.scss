@@ -1,0 +1,10 @@
+.resulthouses-container{
+  min-height: 50vh;
+  &--message{
+
+    text-align: center;
+    margin: 10vh auto;
+    font-size: 2rem;
+    height: 50vh;
+  }
+}

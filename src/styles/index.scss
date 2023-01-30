@@ -1,0 +1,9 @@
+@use 'reset';
+@use 'vars' as v;
+
+body {
+  font-family: v.$font;
+  color: v.$black;
+  margin: auto;
+}
+
